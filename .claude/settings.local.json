@@ -10,7 +10,8 @@
       "Bash(if exist .next rmdir /s /q .next)",
       "Bash(if exist node_modules.cache rmdir /s /q node_modules.cache)",
       "Bash(dir:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(npm run build)"
     ]
   }
 }

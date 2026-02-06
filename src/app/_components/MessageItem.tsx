@@ -9,9 +9,9 @@ interface Message {
   id: string;
   type: MessageType;
   content: string;
-  originalName?: string | null;
-  mimeType?: string | null;
-  size?: number | null;
+  originalName: string | null;
+  mimeType: string | null;
+  size: number | null;
   createdAt: Date;
   status?: "sending" | "failed";
   errorMessage?: string;
