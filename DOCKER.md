@@ -45,13 +45,13 @@ cp .env.docker .env
 
 ```bash
 # 构建并启动
-docker-compose up -d
+docker compose up -d
 
 # 查看日志
-docker-compose logs -f
+docker compose logs -f
 
 # 停止
-docker-compose down
+docker compose down
 ```
 
 ### 3. 使用 Docker 命令启动
@@ -95,15 +95,15 @@ docker rm pwt-app
 
 ### 查看容器日志
 ```bash
-docker-compose logs -f app
+docker compose logs -f app
 ```
 
 ### 进入容器调试
 ```bash
-docker-compose exec app sh
+docker compose exec app sh
 ```
 
 ### 重新构建
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```

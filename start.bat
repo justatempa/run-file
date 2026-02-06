@@ -65,7 +65,7 @@ if not "%BUILD_FLAG%"=="" (
 REM 启动容器
 echo.
 echo [提示] 正在启动容器...
-docker-compose up -d %BUILD_FLAG%
+docker compose up -d %BUILD_FLAG%
 
 if errorlevel 1 (
     echo.
@@ -79,9 +79,9 @@ echo === 启动成功！ ===
 echo 应用地址: http://localhost:13701
 echo.
 echo 常用命令:
-echo   查看日志: docker-compose logs -f
-echo   停止应用: docker-compose down
-echo   重启应用: docker-compose restart
+echo   查看日志: docker compose logs -f
+echo   停止应用: docker compose down
+echo   重启应用: docker compose restart
 echo   重新构建: start.bat --build
 echo.
 pause
