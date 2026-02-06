@@ -71,7 +71,7 @@ docker-compose up -d $BUILD_FLAG
 
 if [ $? -eq 0 ]; then
     echo -e "\n${GREEN}=== 启动成功！ ===${NC}"
-    echo -e "应用地址: ${GREEN}http://localhost:3000${NC}"
+    echo -e "应用地址: ${GREEN}http://localhost:13701${NC}"
     echo -e "\n常用命令:"
     echo "  查看日志: docker-compose logs -f"
     echo "  停止应用: docker-compose down"

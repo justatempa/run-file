@@ -62,7 +62,7 @@ docker build -t pwt-app .
 
 # 运行容器
 docker run -d \
-  -p 3000:3000 \
+  -p 13701:3000 \
   -v $(pwd)/data:/app/prisma \
   --env-file .env \
   --name pwt-app \
@@ -89,7 +89,7 @@ docker rm pwt-app
 
 ## 访问应用
 
-应用启动后访问：http://localhost:3000
+应用启动后访问：http://localhost:13701
 
 ## 故障排查
 
