@@ -15,6 +15,8 @@ interface Message {
   createdAt: Date;
   status?: "sending" | "failed";
   errorMessage?: string;
+  isDeleted: boolean;
+  conversationId: string;
 }
 
 interface MessageItemProps {
